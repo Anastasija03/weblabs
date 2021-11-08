@@ -1,0 +1,719 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    min-width: 375px;
+    overflow-x: hidden;
+    max-width: 1920px;
+    margin: auto;
+}
+@font-face {
+    font-family: Dosis-ExtraBold;
+    src: url('fontsDosis/Dosis-ExtraBold.ttf'); 
+}
+@font-face {
+    font-family: Dosis-Regular;
+    src: url('fontsDosis/Dosis-Regular.ttf');
+}
+@font-face {
+    font-family: Dosis-Medium;
+    src: url('/fontsDosis/Dosis-Medium.ttf');
+}
+@font-face {
+    font-family: Ubuntu-Medium;
+    src: url('fonts/Ubuntu-Medium.ttf');
+}
+@font-face {
+    font-family: Ubuntu-Bold;
+    src: url('fonts/Ubuntu-Bold.ttf');
+}
+@font-face {
+    font-family: Dosis-SemiBold;
+    src: url('fontsDosis/Dosis-SemiBold.ttf');
+}
+.header{
+    background: url('bg/bgHeader.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 760px;
+}
+.menu-375px{
+    display: flex;
+}
+.menu{
+    font-family: Dosis-SemiBold;
+    display: flex;
+    text-transform: uppercase;
+    color:#fff;
+}
+.menu-navigation{
+    display: none;
+}
+.navigation-item{
+    color: #E8E6F8;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo{
+    background: url('bg/logo bg.svg');
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    height: 89px;
+    width: 105px;
+}
+.menu1{
+    margin-right: 10px;
+}
+.header-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.header-title{
+    color: #fff;
+    line-height: 56px;
+    padding: 0 86px 0 16px;
+    font-family: Ubuntu-Medium;
+    width: 70%;
+    text-transform: uppercase;
+}
+.subtitle{
+    font-family: Dosis-Regular;
+    line-height: 22px;
+    font-size: 16px;
+}
+.header-subtitle{
+    padding: 16px 55px 0px 16px;
+    color: #fff;
+}
+.link{
+    width: 28px;
+    margin-right: 10px;
+}
+.header-links-768{
+    display: none;
+}
+.button{
+    color: #fff;
+    outline: none;
+    font-family: Dosis-SemiBold;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 40px;
+    border: none;
+    background: linear-gradient(#2382F2, #4659FF);
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+}
+.header-button{
+    margin: 207px 62px 131px 62px;
+    width: 250px;
+    height: 60px;
+}
+.title{
+    color: #2A2FA3;
+    width: 40%;
+    font-family: Ubuntu-Bold;
+    line-height: 48px;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+.advantages{
+    display: flex;
+    flex-direction: column;
+}
+.advantages-title{
+    margin: 21px 0px 0px 16px;
+}
+.text{
+    font-family: Dosis-Medium;
+    font-size: 16px;
+    line-height: 23px;
+}
+.advantages-text{
+    margin: 21px 16px 0 16px;
+}
+.text-item{
+   margin-bottom: 20px;
+}
+.text-item-bold{
+    font-weight: bold;
+}
+.cards-block{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.card{
+    min-width: 220px;
+    max-width: 220px;
+    height: 220px;
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 0px 6px 20px rgba(61, 70, 118, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cards-block-card{
+    margin: 10px 4px 0px 16px;
+}
+.card-main-icon{
+    width: 50%;
+    height: 50%;
+}
+.card-more-info{
+    align-self: flex-end;
+    margin-right: 10%;
+    width: 35px;
+}
+.card-text{
+    min-height: 34px;
+    margin-top: 7%;
+    text-align: center;
+}
+.slider-buttons{
+    width: 174px;
+    margin: 20px 0 40px 39px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.slider-button{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background: #fff;
+    outline: none;
+    border: none;
+    filter: drop-shadow(0px 2px 22px rgba(61, 70, 118, 0.07));
+}
+.slider-counter{
+    font-family: Dosis-Semibold;
+    font-size: 18px;
+}
+.games{
+    background: url('bg/bgGames.png');
+    background-repeat: no-repeat;
+    min-height: 923px;
+}
+.games-title{
+    color: #fff;
+    padding: 60px 0 0 20px;
+}
+.games-title-big{
+    font-size: 96px;
+    margin-bottom: 10px;
+}
+.games-subtitle{
+    margin: 16px 0 0 20px;
+    width: 90%;
+    color: #fff;
+}
+.games-slider-buttons{
+    margin: 38px 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.view-all-button{
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    width: 197px;
+    height: 48px;
+    color: #363078;
+    background: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Dosis-Medium;
+    text-transform: uppercase;
+    align-items: center;
+    font-size: 15px;
+}
+.games-view-all-button-display-none{
+    display: none;
+}
+.circle-buttons{
+    width: 32%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider-items{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.slider-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slider-img{
+    margin: 0 30px 0 30px;
+    border-radius: 30px;
+    box-shadow: 0px 60px 0px 20px #fff;
+}
+.slider-card-buttons{
+    margin-top: 20px;
+    width: 219px;
+    display: flex;
+    justify-content: space-between;
+}
+.slider-card-button{
+    outline: none;
+    font-family: Dosis-Medium;
+    color: #9594AA;
+    font-size: 14px;
+    width: 96px;
+    height: 36px;
+    background: #fff;
+    border-radius: 10px;
+    border: 3px solid #F2F4F9;
+}
+.package{
+    min-height: 680px;
+}
+.package-title{
+    width: 100%;
+    margin: 12px 5px 0 17px;
+    font-size: 18px;
+}
+.package-text{
+    margin: 20px 10px 0px 22px;
+}
+.list{
+    margin-left: calc(54px/2);
+    font-family: Dosis-Medium;
+    font-size: 16px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.list-item{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    list-style: none;
+}
+.list-icon{
+    margin-right: 10px;
+}
+.package-include{
+    display: flex;
+    justify-content: space-between;
+}
+.include-item{
+    min-width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0px 6px 20px rgba(61, 70, 118, 0.08);
+}
+.item-title{
+    font-size: 16px;
+    font-family: Dosis-Medium;
+    margin-bottom: 10px;
+}
+.close-button{
+    border: none;
+    outline: none;
+    margin: 15px 20px 0 0;
+    align-self: flex-end;
+    background: #fff;
+    width: 24px;
+    height: 24px;
+}
+.footer{
+    background: url('bg/bgFooter.png');
+    padding-top: 20px;
+    background-repeat: no-repeat;
+    min-height: 154px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.footer-top{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-bottom{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-links-768 {
+    display: none;
+}
+.text-item_white{
+    color: #fff;
+}
+.buttons-768px{
+    margin: 48px 0 0 48px;
+}
+.button-768px{
+    width: 94px;
+    height: 50px;
+    background: #fff;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+}
+.img-1440{
+    display: none;
+}
+
+@media (min-width:376px){
+    .header{
+        background: url('bg/bgimg.png');
+        background-size: cover;
+        min-height: 879px;
+    }
+    .title{
+        font-size: 18px;
+        width: 360px;
+    }
+    .subtitle{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .header-subtitle{
+        width: 334px;
+    }
+    .header-bottom{
+        margin-left: 20px;
+    }
+    .header-button{
+        width: 300px;
+        margin: 60px 0 0 10px;
+    }
+    .button{
+        font-size: 18px;
+    }
+    .slider-buttons{
+        width: 206px;
+    }
+    .advantages-text-block{
+        min-width: 400px;
+    }
+    .text{
+        font-size: 18px;
+    }
+    .advantages-title{
+        font-size: 30px;
+    }
+    .card{
+        min-width: 260px;
+        max-width: 260px;
+        height: 260px;    
+    }
+    .games{
+        background: url('/bg/bgGames768.png');
+        height: 1021px;
+        background-size: cover;
+    }
+    .footer{
+        background: url('bg/bgFooter768.png');
+        background-size: cover;
+        min-height: 215px;
+    }
+    .subtitle{
+        font-size: 18px;
+    }
+    .menu-375px{
+        font-size: 18px;
+    }
+    .list-item{
+        margin-bottom: 30px;
+    }
+    .games-view-all-button{
+        display: none;
+    }
+    .games{
+        padding-top: 10%;
+    }
+    .games-view-all-button-display-none{
+        display: flex;
+        min-width: 167px;
+        margin-left: 20px;
+    }
+    .games-subtitle{
+        display: flex;
+        justify-content: space-between;
+    }
+    .games-title_big{
+        margin-right: 10px;
+    }
+    .games-title{
+        font-size: 35px;
+        display: flex;
+        align-items: baseline;
+    }
+    .circle-buttons{
+        display: none;
+    }
+    .header-title{
+        margin-top: 70px;
+        font-size: 25px;
+        line-height: 70px;
+    }
+    .package-text{
+        margin-left: 40px;
+    }
+}
+
+@media (min-width:680px) {
+    .advantages{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 560px;
+    }    
+}
+
+@media (min-width: 670px) {
+    .header-logo{
+        background: url('bg/logoBg768.svg');
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 120px;
+        justify-content: flex-start;
+    }
+    .header-logo-img{
+        margin-left: 30px;
+    }
+    .header-links-768{
+        margin: 70px 0 0 15px;
+        display: flex;
+    }
+    .link{
+        width: 45px;
+        margin-right: 25px;
+    }
+    .list{
+        max-height: 350px;
+    }
+    .menu-375px{
+        display: none;
+    }
+    .header-links{
+        display: none;
+    }
+    .menu{
+        width: 75%;
+    }
+    .menu-navigation{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+    .advantages-title{
+        margin-left: 40px;
+    }
+    .advantages-text{
+        margin-left: 40px;
+    }
+    .include-item{
+        min-width: 286px;
+        min-height: 286px;
+    }
+    .footer-links-768{
+        display: flex;
+    }
+    .games-title{
+        margin-left: 20px;
+    }
+    .games-subtitle{
+        margin-left: 40px;
+    }
+    .games-view-all-button-display-none{
+        min-width: 226px;
+    }
+    .package-title{
+        font-size: 28px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    .header{
+        min-height: 1035px;
+        background-size: cover;
+    }
+    .header-bottom{
+        margin-left: 150px;
+        max-width: 50%;
+        flex-wrap: wrap-reverse;
+        justify-content: flex-start;
+        height: 600px;
+    }
+    .header-links-768{
+        margin-top: auto;
+        margin-bottom: 40px;
+        flex-direction: column;
+    }
+    .include-item{
+        display: none;
+    }
+    .package{
+        padding-left: 30px;
+    }
+    .package-title{
+        text-align: left;
+        font-size: 35px;
+    }
+    .package-text{
+        margin-left: 20px;
+    }
+    .list{
+        margin-right: 50px;
+        max-height: unset;
+        width: auto;
+    }
+    .img-1440{
+        width: 90%;
+        display: block;
+        margin-right: 30px;
+    }
+    .package-include{
+        justify-content: unset;
+    }
+    .list{
+        margin-right: 20%;
+    }
+
+}
+@media (min-width: 900px) {
+    .header{
+        background: url('bg/bgHeader1440.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .header-bottom{
+        margin-left: 160px;
+    }
+    .advantages{
+        padding: 0 100px 0 50px;
+    }
+    .games{
+        padding-left: 60px;
+    }
+    .package{
+        padding-left: 90px;
+    }
+    .footer-bottom{
+        flex-direction: column-reverse;
+    }
+    .footer-subtitle{
+        align-self: flex-start;
+        margin-left: 50px;
+    }
+    .package-text{
+        max-width: 50%;
+    }
+    .bg{
+        background: url('bg/bgGames1440.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .games{
+        background:none;
+        min-height: 1300px;
+    }
+
+}
+@media (min-width: 1200px) {
+    .slider-buttons{
+        display: none;
+    }
+    .advantages{
+        justify-content: unset;
+    }
+    .card1{
+        margin-left: 60px;
+    }
+    .card2{
+        margin: 120px 0 0 60px;
+    }
+    .card3{
+        margin: -60px 60px 0 0;
+    }
+    .card4{
+        margin: 60px 60px 0 0;
+    }
+    .cards-block{
+        width: 800px;
+        margin-left: 20%;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1401px) {
+    .header{
+        min-height: 1450px;
+    }
+    .header-navigation{
+        margin-right: 30%;
+    }
+    .header-bottom{
+        margin-top: 120px;
+        padding-left: 100px;
+    }
+    .header-title{
+        width: 89%;
+        line-height: 120px;
+        font-size: 45px;
+    }
+    .header-subtitle{
+        width: 60%;
+    }
+    .header-links-768{
+        margin-bottom: -80px;
+    }
+    .advantages, .games, .package{
+        padding-left: 160px;
+    }
+    .package{
+        width: 1112px;
+        margin: auto;
+    }
+}
+
+@media (min-width:1500px) {
+    .footer{
+        background: url('bg/bgFooter1920.png');
+        height: 502px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-left: 450px;
+    }
+    .footer-top{
+        margin-top: 300px;
+    }
+    .footer-links-768{
+        margin-right: 25%;
+    }
+}
+
+
+
+

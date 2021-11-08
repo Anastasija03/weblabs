@@ -1,0 +1,48 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+}
+
+.flex > div {
+    margin: 0 1rem 2rem 1rem;
+    text-align: center;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+}
+
+h1{
+    text-align: center;
+
+}
+
+h2{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+.card{
+    background: rgba(214, 203, 203, 0.78);
+    padding: 10px;
+    width: 240px;
+    height: 320px;
+    transition: 0.7s;
+
+}
+.card:hover{
+    margin-top: -20px;
+    transition: 0.7s;
+}

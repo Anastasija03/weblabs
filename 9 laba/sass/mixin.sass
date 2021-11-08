@@ -1,0 +1,72 @@
+// ШРИФТ
+=google-fount($name)
+	@import url('https://fonts.googleapis.com/css2?family=#{$name}:wght@100;200;300;400;500;600;700;800;900&display=swap')
+// ШРИФТ
+=clear
+	margin: 0
+	padding: 0
+=clear-list($firscolor :pink,$secondcolor :yellow)
+	+clear
+	list-style: none
+	transition: .3s
+	color: $firscolor
+	&:hover
+		text-decoration: none
+		color: $secondcolor
+//flexcentr
+=flex-center($dir: column)
+	display: flex
+	flex-direction: $dir
+	justify-content: center
+	align-items: center
+//flexcentr
+//knopka
+=knopka($widthknop :100px,$heighknop :100px, $backgknop: black,$border-knop: 0)
+	width: $widthknop
+	height: $heighknop
+	background: $backgknop
+	border-radius: $border-knop
+	display: block
+	+flex-center
+//knopka
+//adaptive
+=screen-sm
+	@media (max-width: 575.99px) 
+		@content
+
+=screen-md
+	@media (max-width: 767.99px)
+		@content
+
+=screen-lg
+	@media (max-width: 991.99px)
+		@content
+
+=screen-xl
+	@media (max-width: 1199.99px)
+		@content
+//adaptive
+
+
+
+//////////секция
+=section($height-section,$bg-section)
+	height: $height-section
+	background: $bg-section
+//////////секция
+
+
+/////////lorem
+
+=lorem($font-lorema: 16px,$color-lorema: black,$width-lorema: auto)
+	font-size: $font-lorema
+	color: $color-lorema
+	width: $width-lorema
+	text-align: center
+
+/////////lorem
+
+=h1h5($font-h1h5: 20px, $color-h1h5: black)
+	font-size: $font-h1h5
+	color: $color-h1h5
+	text-align: center
